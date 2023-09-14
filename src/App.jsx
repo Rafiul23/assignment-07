@@ -1,16 +1,17 @@
-
+import Header from './Components/Header'
 import './App.css'
+import MainContainer from './Components/MainContainer'
 
 function App() {
   
 
   return (
-    <>
+    <div className='bg-[#F3F3F3]'>
      
-      <h1 className='text-5xl pt-4 font-bold text-center'>Course Registration</h1>
+      <Header></Header> 
+      <MainContainer></MainContainer>     
       
-      
-    </>
+    </div>
   )
 }
 
