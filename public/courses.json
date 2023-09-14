@@ -1,0 +1,66 @@
+[
+    {
+      "course_thumbnail": "https://i.ibb.co/Lpt4tT6/Rectangle-2-2.png",
+      "course_name": "Introduction to C Programming",
+      "course_details": "Learn the basics of programming and coding.",
+      "course_price": 49.99,
+      "credit_hours": 3
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/K6tdRdy/Rectangle-2-3.png",
+      "course_name": "Introduction to Algorithms",
+      "course_details": "Explore Algorithm with Mr. Brown and learn the basics.",
+      "course_price": 59.99,
+      "credit_hours": 4
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/8dWXmst/Rectangle-2-4.png",
+      "course_name": "Introduction to C++ for DSA",
+      "course_details": "Discover C++ and find the roadmap for App development.",
+      "course_price": 79.99,
+      "credit_hours": 5
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/p3YkNVz/Rectangle-3.png",
+      "course_name": "Basic Data Structures",
+      "course_details": "Learn the principles of data structure with Mr. Goldsmith.",
+      "course_price": 69.99,
+      "credit_hours": 4
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/rvrmgdb/Rectangle-2.png",
+      "course_name": "Introduction to OOP Python",
+      "course_details": "Learn the fundamentals of object orriented programming with Python.",
+      "course_price": 49.99,
+      "credit_hours": 3
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/XZryRQd/Rectangle-2-5.png",
+      "course_name": "Software Engineering",
+      "course_details": "Master in Software Engineering with Miss. Ellina Rose.",
+      "course_price": 59.99,
+      "credit_hours": 4
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/CstNRjq/Rectangle-3-1.png",
+      "course_name": "AWS, Cloud Computing",
+      "course_details": "Explore AWS and the fundamentals of Cloud Computing.",
+      "course_price": 89.99,
+      "credit_hours": 5
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/xsmWV3f/Rectangle-2-1.png",
+      "course_name": "Database (MySQL)",
+      "course_details": "Build your own database by learning MySQL.",
+      "course_price": 79.99,
+      "credit_hours": 4
+    },
+    {
+      "course_thumbnail": "https://i.ibb.co/JKD0hCf/Rectangle-2-6.png",
+      "course_name": "Problem-Solving Part",
+      "course_details": "Master in problem solving with Mr. Kevin Powell.",
+      "course_price": 69.99,
+      "credit_hours": 4
+    }
+  ]
+  
