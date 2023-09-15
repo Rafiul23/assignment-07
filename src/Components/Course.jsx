@@ -1,6 +1,6 @@
 import {FaBookOpen} from 'react-icons/fa';
 
-function Course({ course }) {
+function Course({ course, handleCartSection }) {
     const { course_thumbnail, credit_hours, course_price, course_name, course_details } = course;
 
     return (
@@ -17,7 +17,7 @@ function Course({ course }) {
             </p>
             </div>
 
-            <button className='bg-[#2F80ED] text-white w-full p-2 mt-4 rounded-lg'>Select</button>
+            <button onClick={()=>handleCartSection(credit_hours, course_price)} className='bg-[#2F80ED] text-white w-full p-2 mt-4 rounded-lg'>Select</button>
         </div>
     );
 }

@@ -6,6 +6,15 @@ import Cart from "./Cart";
 
 const MainContainer = () => {
     const [courses, setCourses] = useState([]);
+    const [remainingCredit, setRemaingCredit] = useState(20);
+    const [totalCredit, setTotalCredit] = useState(0);
+
+    const handleCartSection = (credit_hours, course_price) =>{
+        const newRemainingCredit = remainingCredit - credit_hours;
+        setRemaingCredit(newRemainingCredit);
+        const newTotalCredit = totalCredit + credit_hours;
+        setTotalCredit(newTotalCredit);
+    }
 
     useEffect(()=>{
         fetch('courses.json')
@@ -20,13 +29,16 @@ const MainContainer = () => {
                {
                     courses.map((course, idx)=> <Course 
                     key={idx} 
-                    course={course}>
+                    course={course}
+                    handleCartSection={handleCartSection}>   
                     </Course>)
                 }
                </div>
             </div>
             <div className="w-1/4">
-                <Cart></Cart>
+                <Cart
+                remainingCredit={remainingCredit}
+                totalCredit={totalCredit}></Cart>
             </div>
         </div>
     );
