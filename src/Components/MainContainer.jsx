@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Course from "./Course";
 import Cart from "./Cart";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const MainContainer = () => {
@@ -15,11 +17,11 @@ const MainContainer = () => {
         const newRemainingCredit = remainingCredit - credit_hours;
 
         if(newRemainingCredit < 0){
-            return alert('No credit remaining');
+            return toast.error('No credit remaining');
         }
 
         if(courseName.find((course)=> course === course_name)){
-            return alert('You have selected it already');
+            return toast.error('You have selected it already');
         } else {
             const newCourses = [ ...courseName, course_name];
             setCourseName(newCourses);
