@@ -42,7 +42,7 @@ const MainContainer = () => {
     },[])
 
     return (
-        <div className="container flex gap-4 mx-auto pt-4">
+        <div className="container flex gap-4 mx-auto py-8">
             <div className="w-3/4">
                <div className="grid grid-cols-3 gap-4">
                {
