@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Course from "./Course";
+import Cart from "./Cart";
 
 
 const MainContainer = () => {
@@ -13,7 +14,7 @@ const MainContainer = () => {
     },[])
 
     return (
-        <div className="container mx-auto pt-4">
+        <div className="container flex gap-4 mx-auto pt-4">
             <div className="w-3/4">
                <div className="grid grid-cols-3 gap-4">
                {
@@ -25,7 +26,7 @@ const MainContainer = () => {
                </div>
             </div>
             <div className="w-1/4">
-
+                <Cart></Cart>
             </div>
         </div>
     );
