@@ -14,9 +14,9 @@ const Cart = ({remainingCredit, totalCredit, coursePrice, courseName}) => {
                     }
                 </ol>
             <hr />
-            <p className="text-[#1C1B1BCC]">Total Credit Hours: {totalCredit} </p>
+            <p className="text-[#1C1B1BCC] font-bold">Total Credit Hour: {totalCredit} </p>
             <hr />
-            <p className="text-[#1C1B1BCC]">Total Price: {coursePrice} USD</p>
+            <p className="text-[#1C1B1BCC] font-bold">Total Price: {coursePrice} USD</p>
         </div>
     );
 };

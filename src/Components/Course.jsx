@@ -5,7 +5,7 @@ function Course({ course, handleCartSection }) {
 
     return (
         <div className="p-4 bg-white rounded-xl">
-            <img src={course_thumbnail} />
+            <img className='mb-2' src={course_thumbnail} />
             <h2 className="text-xl font-bold">{course_name}</h2>
             <p className="text-[#1c1b1ba8]">{course_details}</p>
             <div className='flex pt-2 justify-between'>
