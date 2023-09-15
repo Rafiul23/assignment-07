@@ -8,12 +8,18 @@ const MainContainer = () => {
     const [courses, setCourses] = useState([]);
     const [remainingCredit, setRemaingCredit] = useState(20);
     const [totalCredit, setTotalCredit] = useState(0);
+    const [coursePrice, setCoursePrice] = useState(0);
+    const [courseName, setCourseName] = useState([]);
 
-    const handleCartSection = (credit_hours, course_price) =>{
+    const handleCartSection = (credit_hours, course_price, course_name) =>{
         const newRemainingCredit = remainingCredit - credit_hours;
         setRemaingCredit(newRemainingCredit);
         const newTotalCredit = totalCredit + credit_hours;
         setTotalCredit(newTotalCredit);
+        const newCoursePrice = coursePrice + course_price;
+        setCoursePrice(newCoursePrice);
+        const newCourses = [ ...courseName, course_name];
+        setCourseName(newCourses);
     }
 
     useEffect(()=>{
@@ -38,7 +44,9 @@ const MainContainer = () => {
             <div className="w-1/4">
                 <Cart
                 remainingCredit={remainingCredit}
-                totalCredit={totalCredit}></Cart>
+                totalCredit={totalCredit}
+                coursePrice={coursePrice}
+                courseName={courseName}></Cart>
             </div>
         </div>
     );

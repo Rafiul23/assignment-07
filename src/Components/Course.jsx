@@ -17,7 +17,7 @@ function Course({ course, handleCartSection }) {
             </p>
             </div>
 
-            <button onClick={()=>handleCartSection(credit_hours, course_price)} className='bg-[#2F80ED] text-white w-full p-2 mt-4 rounded-lg'>Select</button>
+            <button onClick={()=>handleCartSection(credit_hours, course_price, course_name)} className='bg-[#2F80ED] text-white w-full p-2 mt-4 rounded-lg'>Select</button>
         </div>
     );
 }
