@@ -13,13 +13,24 @@ const MainContainer = () => {
 
     const handleCartSection = (credit_hours, course_price, course_name) =>{
         const newRemainingCredit = remainingCredit - credit_hours;
+
+        if(newRemainingCredit < 0){
+            return alert('No credit remaining');
+        }
+
+        if(courseName.find((course)=> course === course_name)){
+            return alert('You have selected it already');
+        } else {
+            const newCourses = [ ...courseName, course_name];
+            setCourseName(newCourses);
+        }
+
         setRemaingCredit(newRemainingCredit);
         const newTotalCredit = totalCredit + credit_hours;
         setTotalCredit(newTotalCredit);
         const newCoursePrice = coursePrice + course_price;
         setCoursePrice(newCoursePrice);
-        const newCourses = [ ...courseName, course_name];
-        setCourseName(newCourses);
+        
     }
 
     useEffect(()=>{
