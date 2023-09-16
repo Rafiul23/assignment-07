@@ -17,7 +17,7 @@ const MainContainer = () => {
         const newRemainingCredit = remainingCredit - credit_hours;
 
         if(newRemainingCredit < 0){
-            return toast.error('No credit remaining');
+            return toast.error('You do not have enough credit remaining');
         }
 
         if(courseName.find((course)=> course === course_name)){
